@@ -1,10 +1,17 @@
 {
-  "devDependencies": {
-    "eslint": "^8.20.0",
-    "eslint-config-node": "^4.1.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1"
-  }
+    "name": "forms-project",
+    "version": "1.0.0",
+    "description": "This is an image picsum proj",
+    "main": "index.js",
+    "scripts": {
+        "eslint": "eslint scripts/*.js",
+        "prettify": "prettier --write .",
+        "server": "ws --http2",
+        "start": "npm run eslint && npm run prettify && npm run server"
+    },
+    "devDependencies": {
+        "eslint": "^8.19.0",
+        "local-web-server": "^5.2.1",
+        "prettier": "^2.7.1"
+    }
 }

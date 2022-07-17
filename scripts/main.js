@@ -7,14 +7,14 @@ const form = document.getElementById('form')
 const results = document.getElementById('results')
 const select = document.getElementById('select-option')
 // const radioBtnValue = document.querySelector('input[type=radio]:checked')
-let isFeedback = false;
+let isFeedback = false
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();  
-  const radioBtnValue = document.myForm.language.value
+    e.preventDefault()
+    const radioBtnValue = document.myForm.language.value
     validateForm()
     if (isFeedback === true) {
-        return;
+        return
     } else {
         results.innerHTML = `<ul>
                         <li>Name: ${Name.value}</li>
@@ -25,35 +25,29 @@ form.addEventListener('submit', (e) => {
                         <li>Language: ${radioBtnValue}</li>
                          </ul>`
 
-        return true;
-
+        return true
     }
-
-});
+})
 
 function validateForm() {
-
-
-    if (email.value == "") {
-        email.style.border = "2px solid red"
+    if (email.value == '') {
+        email.style.border = '2px solid red'
         isFeedback = true
     } else {
         isFeedback = false
     }
 
-    if (body.value == "") {
-        body.style.border = "2px solid red"
+    if (body.value == '') {
+        body.style.border = '2px solid red'
         isFeedback = true
     } else {
         isFeedback = false
     }
 
     if (checkbox.checked == false) {
-        checkbox.style.outline = "2px solid red"
+        checkbox.style.outline = '2px solid red'
         isFeedback = true
     } else {
         isFeedback = false
     }
-
-
 }

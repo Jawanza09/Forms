@@ -1,16 +1,16 @@
-#body{
-/* padding: 5px; */
-width: 170px;
-height: 70px
+#body {
+    /* padding: 5px; */
+    width: 170px;
+    height: 70px;
 }
 
-.invalid{
-    border: 1px solid red
+.invalid {
+    border: 1px solid red;
 }
 
-input{
-    margin-bottom: 10px
+input {
+    margin-bottom: 10px;
 }
-ul li{
+ul li {
     list-style-type: none;
 }
